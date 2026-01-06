@@ -15,7 +15,7 @@ nav, .nav {
     position: sticky;
     top: 0;
     z-index: 9999;
-    background-color: #f8f9fd; /* ensure background so content doesn't show through */
+    background-color: #f8f9fd;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .nav{
@@ -407,19 +407,18 @@ nav ul li{
     box-sizing: border-box;
 }
 
-/* sensible item sizing so layout is responsive */
+
 .flex-s > * {
     flex: 1 1 220px;    
     max-width: 320px;   
     min-width: 160px;   
 }
 
-/* medium screens: allow two-up layout */
 @media (max-width: 900px) {
   .flex-s > * { flex: 1 1 45%; max-width: none; }
 }
 
-/* small screens: stack vertically */
+/* layar kecil */
 @media (max-width: 600px) {
   .flex-s {
     flex-direction: column;
@@ -471,7 +470,7 @@ form{
     margin: 20px;
 }
 
-/* improved input styling */
+
 .container .contactForm .inputBox input,
 .container .contactForm .inputBox textarea {
     width: 100%;
@@ -493,7 +492,7 @@ form{
     resize: vertical;
 }
 
-/* focus state */
+
 .container .contactForm .inputBox input:focus,
 .container .contactForm .inputBox textarea:focus {
     border-color: #1F3765;
@@ -501,20 +500,20 @@ form{
     transform: translateY(-1px);
 }
 
-/* placeholder color */
+
 .container .contactForm .inputBox input::placeholder,
 .container .contactForm .inputBox textarea::placeholder {
     color: #9aa4b2;
 }
 
-/* disabled state */
+
 .container .contactForm .inputBox input:disabled,
 .container .contactForm .inputBox textarea:disabled {
     opacity: 0.6;
     cursor: not-allowed;
 }
 
-/* optional label style (if you add labels) */
+
 .container .contactForm .inputBox label {
     display: block;
     margin-bottom: 6px;
@@ -523,13 +522,13 @@ form{
     font-size: 0.95rem;
 }
 
-/* validation error helper class */
+
 .input-error {
     border-color: #d9534f !important;
     box-shadow: 0 8px 20px rgba(217,83,79,0.08) !important;
 }
 
-/* submit button */
+
 .submit-btn {
     display: inline-block;
     padding: 12px 20px;
@@ -546,7 +545,7 @@ form{
     box-shadow: 0 10px 28px rgba(31,55,101,0.18);
 }
 
-/* responsive tweaks */
+/* responsive */
 @media (max-width: 600px) {
     .container .contactForm .inputBox input,
     .container .contactForm .inputBox textarea {
@@ -567,7 +566,7 @@ form{
 
 .kolom li {
     list-style: none;
-    order: 1;                    /* text on left */
+    order: 1;                  
     flex: 1;
     text-align: left;
 }
@@ -578,7 +577,7 @@ form{
     max-width: 300px;
     height: auto;
     border-radius: 8px;
-    order: 2;                    /* image on right */
+    order: 2;                    
     flex: 0 0 300px;
 }
 
@@ -589,7 +588,7 @@ form{
     justify-content: center;
 }
 
-/* Tablet: adjust spacing */
+/* Tablet: ngatur jarak */
 @media (max-width: 900px) {
     .kolom {
         gap: 20px;
@@ -597,7 +596,7 @@ form{
     .kolom img { max-width: 250px; flex: 0 0 250px; }
 }
 
-/* Mobile: stack vertically (image on top, text below) */
+/* Mobile, foto diatas tp teks dibawah*/
 @media (max-width: 600px) {
     .kolom {
         flex-direction: column-reverse;
@@ -606,13 +605,13 @@ form{
     }
     
     .kolom li {
-        order: 2;                /* text on bottom */
+        order: 2;               
         text-align: center;
         flex: 1 1 auto;
     }
     
     .kolom img {
-        order: 1;                /* image on top */
+        order: 1;               
         max-width: 300px;
         flex: 1 1 auto;
     }
@@ -653,7 +652,6 @@ form{
 @media (max-width: 600px) {
     .logoKontak{
         display: flex;
-        /* display: none; */
         flex-direction: column;
     }
 }
@@ -685,22 +683,22 @@ form{
 
 #myImg:hover {opacity: 0.7;}
 
-/* The Modal (background) */
+
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9); 
 }
 
-/* Modal Content (Image) */
+
 .modal-content {
   margin: auto;
   display: block;
@@ -708,7 +706,7 @@ form{
   max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
+
 #caption {
   margin: auto;
   display: block;
@@ -721,7 +719,7 @@ form{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Add Animation - Zoom in the Modal */
+
 .modal-content, #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -732,7 +730,7 @@ form{
   to {transform:scale(1)}
 }
 
-/* The Close Button */
+
 .close {
   position: absolute;
   top: 15px;
@@ -750,7 +748,7 @@ form{
   cursor: pointer;
 }
 
-/* Modal Styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -796,7 +794,7 @@ form{
   color: #f1f1f1;
   font-size: 1rem;
   line-height: 1.3;
-  background: rgba(0,0,0,0.25); /* subtle backdrop so text is readable */
+  background: rgba(0,0,0,0.25);
   border-radius: 8px;
   box-sizing: border-box;
 }
@@ -813,7 +811,7 @@ form{
     padding: 6px 10px;
   }
 }
-/* Image hover effect */
+
 .sekolah-img {
     transition: transform 0.2s ease, filter 0.2s ease;
 }
@@ -867,7 +865,7 @@ form{
 .scroll section:nth-child(2).visible { animation-delay: 0.2s; }
 .scroll section:nth-child(3).visible { animation-delay: 0.2s; }
 .scroll section:nth-child(4).visible { animation-delay: 0.2s; }
-/* === RESPONSIVE IMPROVEMENTS === */
+
 
 /* Large Desktop (1200px+) */
 @media (min-width: 1200px) {
@@ -1079,4 +1077,3 @@ form{
     nav ul { padding: 5px; gap: 3px; }
 }
 
- /* maaf kebanyakan hehe */
