@@ -1,0 +1,1082 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+     background-color: #1F3765;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* default batas */
+nav, .nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #f8f9fd; /* ensure background so content doesn't show through */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.nav{
+    background-color: #f8f9fd;
+    box-sizing: border-box;
+    border-left: #b0c6d4 solid 100px;
+}
+.nav a:hover{
+    background-color: #b0c6d4;
+    color: #1F3765;
+    padding: 20px;
+    transition: 0.3s;
+}
+nav ul li a{
+      color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+   
+}
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+}
+nav ul li{
+    float: left;
+   
+}
+.OpenPage, .ahli {
+    position: relative;
+    z-index: 1;
+}
+.OpenPage{
+    background-color: #f8f9fd;
+    padding: 50px;
+    
+}
+.OpenPage h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding-bottom: 20px;
+   background-image: linear-gradient(
+    -225deg,
+    #265bbc 0%,
+    #4fb75d 29%,
+    #265bbc 67%,
+    #4fb75d 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.Page{
+    display: flex;
+}
+.OpenPage h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1F3765;
+}
+
+/* dan lainnya */
+
+.judulSub{
+    margin-top: 50px;
+
+}
+.OpenPage h3{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #707f88;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.dll{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  animation: flip 2s infinite;
+  animation-delay: calc(.1s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+.foto{
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px;
+    filter: drop-shadow(7px 5px 0px #1F3765);
+}
+.foto img{
+    border-radius: 50%;
+    padding: 20px;
+}
+.foto h4{
+    margin-top: 200px;
+    position: relative;
+    right: 50px;
+    
+}
+.foto img:hover{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.flip-card {
+  display: inline-block;
+  width: 200px;               
+  cursor: pointer;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  outline: none;
+}
+.flip-card:focus {
+  box-shadow: 0 0 0 4px rgba(37,67,150,0.12);
+  border-radius: 8px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(.2,.9,.3,1);
+}
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 8px;
+  /* overflow: hidden; */
+  background: transparent;
+}
+
+
+.flip-card:hover .flip-card-inner{
+    transform: rotateY('180deg');
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 480px) {
+  .flip-card { width: 140px; }
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.learn{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.learn a{
+    color: #f8f9fd;
+    text-decoration: none;
+    background-color: #1F3765;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.learn a:hover{
+    color: #fcfcfc;
+    box-shadow: 3px 5px 5px #1F3765;
+    transform: scale(1.3);
+    transition: 0.5s;
+    border-radius: 0px;
+    background: linear-gradient(to top, #1F3765, #3e7f93);
+}
+
+.batas{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tentang{
+    margin: 20px;
+}
+.tentang h1{
+    color: #1F3765;
+    background-color: #f8f9fd;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+.tentang p{
+    color: #b0c6d4;
+    margin: 50px;
+}
+
+.pendidikan h1{
+    color: #1F3765;
+    background-color: #f8f9fd;
+    padding: 5px;
+    margin-right: 50px;
+}
+
+.pendidikan li{
+    margin-top: 20px;
+    list-style-type: none;
+    color: #b0c6d4;
+}
+.pendidikan{
+    margin-top: 90px;
+}
+.dl a{
+    color: #f8f9fd;
+    text-decoration: none;
+    background-color: black;
+    padding: 20px;
+    
+}
+
+.dl{
+    display: flex;
+    justify-content: center;
+}
+
+.dl a:hover{
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 0.5s;
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 10px black);
+    background: linear-gradient(to top, #1F3765, #3e7f93);
+}
+.dl button{
+    color: #f8f9fd;
+    text-decoration: none;
+    background-color: black;
+    padding: 20px;
+    
+}
+
+
+.dl button:hover{
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    transition: 0.5s;
+    transform: scale(1.1);
+    filter: drop-shadow(2px 2px 10px black);
+    background: linear-gradient(to top, #1F3765, #3e7f93);
+}
+
+.ahli{
+    background-color: #f8f9fd;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.skll{
+    border-top: solid 10px #1f3765;
+    border-radius: 20px;
+}
+.konten{
+    display: flex;
+    gap: 20px;                    
+    width: 100%;                  
+    overflow-x: auto;             
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px;               
+    box-sizing: border-box;
+}
+
+/* sembunyi default scrollbar  */
+.konten::-webkit-scrollbar { height: 8px; }
+.konten::-webkit-scrollbar-thumb { background: #1F3765; border-radius: 10px; }
+
+
+.card{
+    flex: 0 0 300px;              
+    scroll-snap-align: start;     
+    padding: 20px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 600px) {
+  .card { flex: 0 0 85%; }        
+}
+
+.card h2{
+    background-color: #1F3765;
+    color: #f8f9fd;
+}
+
+.card span{
+    color: #505c63;
+    
+}
+
+.skill h1{
+    color: #1F3765;
+}
+
+.sertif h1{
+    color: #1F3765;
+    margin-bottom: 20px;
+}
+
+.sertif img{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    filter: drop-shadow(4px 2px 3px #1f3765);
+}
+
+.sertif{
+    border-bottom: solid 10px #1F3765;
+    border-radius: 20px;
+}
+
+.sertif img:hover{
+    transform: scale(0.2);
+}
+.projek h1{
+    color: #1F3765;
+    margin-bottom: 20px;
+}
+.projek p{
+    text-align: center;
+    color: #505c63;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.prj{
+    position: relative;
+    top: 20px;
+}
+
+.flex-s{
+    display: flex;
+    flex-wrap: wrap;            
+    gap: 16px;                   
+    justify-content: center;     
+    align-items: center;         
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+/* sensible item sizing so layout is responsive */
+.flex-s > * {
+    flex: 1 1 220px;    
+    max-width: 320px;   
+    min-width: 160px;   
+}
+
+/* medium screens: allow two-up layout */
+@media (max-width: 900px) {
+  .flex-s > * { flex: 1 1 45%; max-width: none; }
+}
+
+/* small screens: stack vertically */
+@media (max-width: 600px) {
+  .flex-s {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .flex-s > * {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.container .contactForm .inputBox input, .container .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.container .contactForm .inputBox span{
+    
+    pointer-events: none;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #f8f9fd;
+    transition: 0.5s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #101c33;
+   
+}
+
+form h2{
+    color: #f8f9fd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+form{
+    margin: 20px;
+}
+
+.inputBox{
+    margin: 20px;
+}
+
+/* improved input styling */
+.container .contactForm .inputBox input,
+.container .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-bottom: 2px solid rgba(0,0,0,0.12);
+    outline: none;
+    background: #ffffff;
+    color: #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: box-shadow .18s ease, border-color .18s ease, transform .12s ease;
+}
+
+.container .contactForm .inputBox textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* focus state */
+.container .contactForm .inputBox input:focus,
+.container .contactForm .inputBox textarea:focus {
+    border-color: #1F3765;
+    box-shadow: 0 8px 20px rgba(31,55,101,0.12);
+    transform: translateY(-1px);
+}
+
+/* placeholder color */
+.container .contactForm .inputBox input::placeholder,
+.container .contactForm .inputBox textarea::placeholder {
+    color: #9aa4b2;
+}
+
+/* disabled state */
+.container .contactForm .inputBox input:disabled,
+.container .contactForm .inputBox textarea:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* optional label style (if you add labels) */
+.container .contactForm .inputBox label {
+    display: block;
+    margin-bottom: 6px;
+    color: #101c33;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* validation error helper class */
+.input-error {
+    border-color: #d9534f !important;
+    box-shadow: 0 8px 20px rgba(217,83,79,0.08) !important;
+}
+
+/* submit button */
+.submit-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #1F3765;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease, opacity .12s;
+}
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(31,55,101,0.18);
+}
+
+/* responsive tweaks */
+@media (max-width: 600px) {
+    .container .contactForm .inputBox input,
+    .container .contactForm .inputBox textarea {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
+
+.kolom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.kolom li {
+    list-style: none;
+    order: 1;                    /* text on left */
+    flex: 1;
+    text-align: left;
+}
+
+.kolom img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    order: 2;                    /* image on right */
+    flex: 0 0 300px;
+}
+
+.kolom ul {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Tablet: adjust spacing */
+@media (max-width: 900px) {
+    .kolom {
+        gap: 20px;
+    }
+    .kolom img { max-width: 250px; flex: 0 0 250px; }
+}
+
+/* Mobile: stack vertically (image on top, text below) */
+@media (max-width: 600px) {
+    .kolom {
+        flex-direction: column-reverse;
+        gap: 15px;
+        padding: 12px;
+    }
+    
+    .kolom li {
+        order: 2;                /* text on bottom */
+        text-align: center;
+        flex: 1 1 auto;
+    }
+    
+    .kolom img {
+        order: 1;                /* image on top */
+        max-width: 300px;
+        flex: 1 1 auto;
+    }
+    
+    .kolom ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+}
+
+.setengah{
+    width: 600px;
+}
+
+.logo ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.logo li:hover{
+    transform: scale(1.5);
+    transition: 0.3s;
+    filter: drop-shadow(1px 2px 10px rgb(255, 255, 255));
+}
+
+
+.logoKontak{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* Container untuk form dan maps */
+@media (max-width: 600px) {
+    .logoKontak{
+        display: flex;
+        /* display: none; */
+        flex-direction: column;
+    }
+}
+
+.maps iframe{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 30px 0px 20px 0px;
+}
+.maps h2{
+    color: #f8f9fd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    background-color: #101c33;
+    text-align: center;
+    
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 20%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    width: 500px;
+    max-height: 90vh;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#sekolahCaption,
+#sertifikatCaption {
+  display: block;
+  width: 100%;
+  max-width: 90%;
+  margin: 12px auto 0;       
+  padding: 8px 12px;
+  text-align: center;   
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     
+  color: #f1f1f1;
+  font-size: 1rem;
+  line-height: 1.3;
+  background: rgba(0,0,0,0.25); /* subtle backdrop so text is readable */
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.modal .modal-content + #sekolahCaption,
+.modal .modal-content + #sertifikatCaption {
+  margin-top: 14px;
+}
+
+@media (max-width: 480px) {
+  #sekolahCaption,
+  #sertifikatCaption {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+}
+/* Image hover effect */
+.sekolah-img {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.sekolah-img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.flex-s img {
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.flex-s img:hover {
+    transform: scale(1.2);
+    filter: brightness(0.8);
+    transition: 0.5s;
+}
+
+/* Fade In Down Animation - hanya untuk elemen di .scroll */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.scroll .fade-in-down {
+    opacity: 0;
+}
+
+
+.scroll .fade-in-down.visible {
+    animation: fadeInDown 0.8s ease-out forwards;
+}
+
+
+.scroll .fade-in-down:nth-child(1).visible { animation-delay: 0s; }
+.scroll .fade-in-down:nth-child(2).visible { animation-delay: 0.15s; }
+.scroll .fade-in-down:nth-child(3).visible { animation-delay: 0.3s; }
+.scroll .fade-in-down:nth-child(4).visible { animation-delay: 0.45s; }
+.scroll .fade-in-down:nth-child(5).visible { animation-delay: 0.6s; }
+.scroll .fade-in-down:nth-child(6).visible { animation-delay: 0.75s; }
+
+.scroll section:nth-child(1).visible { animation-delay: 0s; }
+.scroll section:nth-child(2).visible { animation-delay: 0.2s; }
+.scroll section:nth-child(3).visible { animation-delay: 0.2s; }
+.scroll section:nth-child(4).visible { animation-delay: 0.2s; }
+/* === RESPONSIVE IMPROVEMENTS === */
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+    .OpenPage { padding: 60px; }
+    .setengah { width: 600px; }
+    .maps iframe { width: 500px; margin-left: 50px; }
+}
+
+/* Desktop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .OpenPage { padding: 40px; }
+    .OpenPage h3 { margin-left: 30px; }
+    .setengah { width: 100%; max-width: 550px; }
+    .maps iframe { width: 450px; margin-left: 30px; }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .OpenPage { padding: 30px; }
+    .OpenPage h1 { font-size: 40px; }
+    .OpenPage h3 { margin-left: 20px; font-size: 0.95rem; }
+    
+    .Page { flex-direction: column; gap: 20px; }
+    
+    .flip-card { width: 180px; height: 180px; }
+    
+    nav ul { justify-content: center; gap: 8px; }
+    
+    .kolom { flex-direction: column; gap: 20px; }
+    .kolom img { max-width: 250px; flex: 0 0 250px; }
+    
+    .card { flex: 0 0 250px; }
+    
+    .sertif img { width: 280px; }
+    
+    .setengah { width: 100%; }
+    
+    .logoKontak { flex-direction: column; gap: 20px; }
+    .maps iframe { width: 100%; margin-left: 0; margin-bottom: 20px; height: 350px; }
+    
+    .batas { padding: 12px; }
+    .tentang { margin: 10px; }
+    .tentang h1, .pendidikan h1 { margin-right: 20px; }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    body { font-size: 14px; }
+    
+    .nav { border-left: none; }
+    nav ul { flex-direction: row; justify-content: center; gap: 5px; padding: 8px; }
+    nav ul li a { padding: 8px 12px; font-size: 0.9rem; }
+    
+    .OpenPage { padding: 20px; }
+    .OpenPage h1 { font-size: 32px; }
+    .OpenPage h2 { font-size: 24px; }
+    .OpenPage h3 { margin-left: 0; margin-top: 30px; font-size: 0.9rem; text-align: center; }
+    
+    .Page { flex-direction: column; align-items: center; gap: 15px; }
+    
+    .flip-card { width: 160px; height: 160px; }
+    
+    .judulSub { margin-top: 20px; }
+    
+    .learn { padding-top: 15px; }
+    .learn a { padding: 8px 12px; font-size: 0.95rem; }
+    
+    .batas { padding: 12px; }
+    .tentang { margin: 8px; }
+    .tentang h1, .pendidikan h1 { font-size: 24px; margin-right: 0; }
+    .tentang p { margin: 15px; font-size: 0.9rem; }
+    
+    .kolom { flex-direction: column-reverse; gap: 12px; padding: 12px; }
+    .kolom li { text-align: center; }
+    .kolom img { max-width: 100%; flex: 1 1 auto; }
+    .kolom ul { flex-direction: column; gap: 12px; margin-top: 10px; }
+    
+    .ahli { padding: 30px 12px; }
+    .skill h1 { font-size: 28px; }
+    .card { flex: 0 0 280px; padding: 15px; }
+    .card h2 { padding: 8px; }
+    
+    .sertif { margin-top: 20px; }
+    .sertif h1 { font-size: 24px; }
+    .sertif img { width: 100%; max-width: 300px; }
+    
+    .flex-s { gap: 12px; padding: 8px; }
+    
+    .setengah { width: 100%; }
+    .container .contactForm .inputBox input,
+    .container .contactForm .inputBox textarea { padding: 10px; font-size: 0.95rem; }
+    
+    .logoKontak { flex-direction: column; }
+    .maps { width: 100%; }
+    .maps h2 { margin-left: 0; font-size: 20px; padding: 10px; }
+    .maps iframe { width: 100%; margin: 0; height: 300px; border-radius: 8px; }
+    
+    .logo ul { gap: 12px; margin-top: 15px; }
+    .logo li:hover { transform: scale(1.3); }
+}
+
+/* Mobile Small (480px - 575px) */
+@media (min-width: 480px) and (max-width: 575px) {
+    body { font-size: 13px; }
+    
+    .nav { border-left: none; padding: 0; }
+    nav ul { flex-direction: row; justify-content: space-around; gap: 0; padding: 8px 0; }
+    nav ul li a { padding: 6px 8px; font-size: 0.85rem; }
+    
+    .OpenPage { padding: 15px; }
+    .OpenPage h1 { font-size: 28px; }
+    .OpenPage h3 { margin: 20px 0; font-size: 0.85rem; }
+    
+    .Page { flex-direction: column; gap: 12px; }
+    
+    .flip-card { width: 140px; height: 140px; }
+    
+    .learn a { padding: 6px 10px; font-size: 0.9rem; }
+    
+    .kolom { flex-direction: column-reverse; gap: 10px; padding: 8px; }
+    .kolom img { max-width: 100%; }
+    
+    .card { flex: 0 0 90%; padding: 12px; }
+    
+    .setengah { width: 100%; max-width: none; }
+    
+    .container .contactForm .inputBox input,
+    .container .contactForm .inputBox textarea { padding: 8px; font-size: 0.9rem; }
+    
+    .maps iframe { width: 100%; margin: 0; height: 250px; }
+    .maps h2 { font-size: 18px; margin-left: 0; }
+}
+
+/* Extra Small Mobile (< 480px) */
+@media (max-width: 479px) {
+    body { font-size: 12px; }
+    
+    .nav { border-left: none; position: sticky; padding: 0; }
+    nav ul { flex-direction: row; justify-content: space-between; gap: 0; padding: 6px; overflow-x: auto; }
+    nav ul li { float: none; }
+    nav ul li a { padding: 6px; font-size: 0.75rem; white-space: nowrap; }
+    
+    .OpenPage { padding: 10px; }
+    .OpenPage h1 { font-size: 24px; padding-bottom: 10px; }
+    .OpenPage h2 { font-size: 18px; }
+    .OpenPage h3 { margin: 15px 0; font-size: 0.8rem; text-align: left; }
+    
+    .Page { flex-direction: column; gap: 10px; }
+    
+    .flip-card { width: 120px; height: 120px; }
+    .flip-card-front h4,
+    .flip-card-back h4 { font-size: 0.9rem; padding: 4px; display: none;}
+    
+    .judulSub { margin-top: 15px; }
+    
+    .learn { padding-top: 10px; }
+    .learn a { padding: 6px 10px; font-size: 0.85rem; }
+    
+    .batas { padding: 8px; }
+    .tentang { margin: 5px; }
+    .tentang h1, .pendidikan h1 { font-size: 20px; margin-right: 0; }
+    .tentang p { margin: 10px 5px; font-size: 0.85rem; }
+    .dll { flex-direction: column; gap: 8px; }
+    
+    .kolom { flex-direction: column-reverse; gap: 8px; padding: 5px; }
+    .kolom li { font-size: 0.9rem; }
+    .kolom img { max-width: 100%; width: 100%; }
+    
+    .ahli { padding: 15px 8px; }
+    .skill h1 { font-size: 22px; }
+    .konten { gap: 10px; padding: 10px; overflow-x: auto; }
+    .card { flex: 0 0 85%; padding: 10px; min-width: 150px; }
+    .card h2 { padding: 6px; font-size: 0.95rem; }
+    .card span { font-size: 0.85rem; }
+    
+    .sertif { margin-top: 15px; }
+    .sertif h1 { font-size: 20px; margin-bottom: 10px; }
+    .sertif img { width: 100%; max-width: 100%; }
+    
+    .flex-s { gap: 8px; padding: 5px; }
+    .flex-s > * { flex: 1 1 100%; max-width: 100%; min-width: auto; }
+    
+    .setengah { width: 100%; }
+    .container { width: 100%; padding: 8px; }
+    .container .contactForm .inputBox { margin: 10px 5px; }
+    .container .contactForm .inputBox input,
+    .container .contactForm .inputBox textarea { padding: 8px; font-size: 0.85rem; }
+    .container .contactForm .inputBox span { padding: 8px 5px; font-size: 0.95rem; }
+    
+    .logoKontak { flex-direction: column; gap: 10px; }
+    .maps { width: 100%; }
+    .maps h2 { font-size: 16px; margin-left: 0; padding: 8px; }
+    .maps iframe { width: 100%; margin: 0; height: 220px; }
+    
+    .logo ul { gap: 10px; margin-top: 10px; }
+    .logo li:hover { transform: scale(1.2); }
+    
+    footer { margin-top: 15px; }
+    footer p { font-size: 0.75rem; }
+}
+
+/* Landscape mode adjustments */
+@media (orientation: landscape) and (max-height: 600px) {
+    .OpenPage { padding: 15px; }
+    .OpenPage h1 { font-size: 28px; }
+    .judulSub { margin-top: 10px; }
+    .Page { gap: 10px; }
+    .flip-card { width: 130px; height: 130px; }
+    nav ul { padding: 5px; gap: 3px; }
+}
+
+ /* maaf kebanyakan hehe */
